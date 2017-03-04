@@ -1,0 +1,32 @@
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">{{ page.title }}</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <!--
+                <li {% if page.description=="Home" %} class="active" {% endif%}><a href="/">Home</a></li>
+                <li {% if page.description=="About" %} class="active" {% endif%}><a href="/about">About</a></li>
+                <li {% if page.description=="CV" %} class="active" {% endif%}><a href="/cv">CV</a></li>
+                <li {% if page.description=="Blog" %} class="active" {% endif%}><a href="/blog">Blog</a></li>                
+                -->
+               
+    {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+    {% for p in navigation_pages %}
+      {% if p.navigation_weight %}
+        <li {% if p.url == page.url %} class="active" {% endif %}>
+          <a href="{{ p.url }}" >            
+            {{ p.description }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  
+            </ul>
+
+            
+        
+    </div>
+</nav>

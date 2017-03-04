@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:ondryk.selecky@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/ondrykselecky.github.io">OndrykSelecky.github.io</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<html>
+
+<head>
+	<title>{{ page.title }}</title>
+	<!-- link to main stylesheet -->
+	
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<!--  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"> -->
+
+</head>
+<!-- background="/images/who60.jpg" -->
+
+
+<body>
+
+	{% include navigation_bar.html %}
+
+	
+<header class="image-bg-fluid-height">
+	<img class="sml img-responsive img-center" src="/images/logo.jpg" alt="">
+	<h1 style="color: #003B6F; font-weight: 700; font-size: 60; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;"> Ondrej Selecký </h1>
+</header>
+
+	<div class="container">
+
+		{{ content }}
+
+	</div>
+	<!-- /.container -->
+
+	</div>
+	<footer>
+		<ul>
+			<li><a href="mailto:ondryk.selecky@gmail.com">email</a></li>
+			<li><a href="https://github.com/ondrykselecky.github.io">OndrykSelecky.github.io</a></li>
+		</ul>
+	</footer>
+</body>
+
+</html>
