@@ -12,17 +12,16 @@
 
 <body>
 
+
 	{% include nav.html %}
 
-
-	<div class="container">
+	{% if page.description != "Home" %} <div class="container"> {% endif %}
 
 		{{ content }}
 
-	</div>
+ 	{% if page.description != "Home" %} </div> {% endif %}
 
 	{% include footer.html %}
-
 
 </body>
 

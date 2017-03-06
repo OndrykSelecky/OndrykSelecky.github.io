@@ -1,16 +1,16 @@
 <ul>
     <div class="container">
 
-{% assign p = page.title | replace: ' ', '&#160' %}
+{% assign description = page.description | replace: ' ', '&#160' %}
 
-     <li class="nav-title">{{ p }}</li>
+     <li class="nav-title">{{ description }}</li>
 
  {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' | reverse %}
     {% for p in navigation_pages %}
       {% if p.navigation_weight %}
         <li style="float:right" {% if p.url == page.url %} class="active" {% endif %}>
           <a href="{{ p.url }}" >            
-            {{ p.description }}
+            {{ p.title }}
           </a>
         </li>
       {% endif %}

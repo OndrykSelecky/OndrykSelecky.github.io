@@ -1,4 +1,3 @@
-name: Ondrej Selecký
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
-
+collections:
+  cv_parts:
+    

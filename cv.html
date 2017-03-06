@@ -1,0 +1,12 @@
+---
+layout: default
+title: CV
+description: Životopis
+navigation_weight: 3
+---
+{% for part in site.cv_parts %}
+	<div class="part">
+		<h2><a href="{{ part.url }}">{{ part.title }}</a></h2>
+		{{ part.content }}
+	</div>
+{% endfor %}

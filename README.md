@@ -1,1 +1,0 @@
-# OndrykSelecky.github.io
