@@ -1,18 +1,8 @@
-body {
-    margin: 50px auto;
+body {   
     width: 100%;
     background-size: 100%; 
 }
-/*nav ul, */footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-/*nav ul li, */footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
+
 a {
     text-decoration: none;
     color: #999;
@@ -29,10 +19,11 @@ p {
     line-height: 1.4em;
     color: #333;
 }
+/*
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-}
+}*/
 
 ul.posts { 
     margin: 20px auto 40px; 
@@ -43,12 +34,9 @@ ul.posts li {
     list-style: none;
 }
 
-.navbar-header {
-    min-width: 200px;
-  }
-
-.navbar {
-    border-bottom: 0px;
+.navbar-right
+{
+    padding-right: 20px;
 }
 
 .body-center {      
@@ -68,13 +56,13 @@ ul.posts li {
 }
 
 .image-bg-fluid-height {
-	background: url('/images/who60.jpg') no-repeat center center scroll;
+/*	background: url('/images/who60.jpg') no-repeat center center scroll;*/
     padding: 50px 0;
     
 }
 
 .image-bg-fixed-height {
-	background: url('images/who60.jpg') no-repeat center center scroll;
+/*	background: url('images/who60.jpg') no-repeat center center scroll;*/
     height: 450px;
     
 }
@@ -89,4 +77,41 @@ ul.posts li {
     border-radius: 50%;
 }
 
+.container { position: relative; width: 50%}
 
+.left.column {
+    width: 60%;
+}
+
+.right.column {
+    width: 35%;
+}
+
+.footer { 
+  display: block; }
+
+.site-footer > .container {  margin: 0 auto; padding: 10px 10px; box-sizing: border-box; /* for test only */ border: 1px #eeeeee; }
+
+.column, .columns { width: 100%; float: right; box-sizing: border-box; }
+
+
+.site-footer { position: absolute; bottom: 0; padding-bottom: 0rem; width: 100%; /* footer style */ color: blue; background-color: #FAFAFB; }
+.site-footer .left a { color: #666; border-bottom: 1px; text-decoration: none; }
+.site-footer .left a:hover { color: red; border-bottom: 1px; }
+
+.container > .site_footer {
+    min-width: 500px;
+}
+
+/* footer */
+.footer { float: left; }
+
+.left { text-align: left; padding-top: 5px; }
+
+.right { text-align: right; }
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
