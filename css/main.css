@@ -1,6 +1,24 @@
+
+@font-face { font-family: Kelvetica; src: url('/fonts/Kelvetica.ttf'); } 
+@font-face { font-family: Arvin; src: url('/fonts/Arvin Regular.ttf'); } 
+
 body {   
     width: 100%;
-    background-size: 100%; 
+    margin-left: 0px;
+    margin-top: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-size:cover;
+}
+
+
+.container { 
+    position: relative; 
+    width: 55%; 
+    text-align: center; 
+    margin: 0 auto;
 }
 
 a {
@@ -19,11 +37,6 @@ p {
     line-height: 1.4em;
     color: #333;
 }
-/*
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}*/
 
 ul.posts { 
     margin: 20px auto 40px; 
@@ -34,84 +47,152 @@ ul.posts li {
     list-style: none;
 }
 
-.navbar-right
-{
-    padding-right: 20px;
+/*
+    Navbar
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    max-height: 50px;
+    font-family: 'Arvin';
 }
 
-.body-center {      
-    border-radius: 5px;
-    
-   /* filter:alpha(opacity=70);*/
-    background: rgba(200, 200, 200);
+li {
+    float: left;
 }
 
-.image-bg-fluid-height,
-.image-bg-fixed-height {
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-title {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #333;
+}
+
+.active {
+    background-color: #111;
+}
+
+
+
+/*
+    Home screen
+*/
+
+.title-image {
     text-align: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;     
-}
-
-.image-bg-fluid-height {
-/*	background: url('/images/who60.jpg') no-repeat center center scroll;*/
-    padding: 50px 0;
-    
-}
-
-.image-bg-fixed-height {
-/*	background: url('images/who60.jpg') no-repeat center center scroll;*/
-    height: 450px;
-    
-}
-
-.img-center {
-	margin: 0 auto;   
+    -o-background-size: cover;
+    padding-top: 50px; 
+    margin-left: 3%; 
+    margin-bottom: 20px;     
 }
 
 .img-responsive {
-    width: 13%;
-    height: 13%;
-    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;   
 }
 
-.container { position: relative; width: 50%}
 
-.left.column {
-    width: 60%;
+.title-name h1 {    
+    /*background-color: #dddddd; 
+     border-radius: 20px; */
+    display: inline;
+    font-size: 4.0vw;  
+    color: #dddddd; 
+    font-weight: 200; 
+   font-family: 'Arvin';
 }
 
-.right.column {
-    width: 35%;
+.quote {
+    font-family: 'Kelvetica';
+    font-size: 1.2vw;  
+    color: #9999ff; 
+    margin-top: 10%;
+}
+
+/* 
+    Footer 
+*/
+
+.footer { 
+  display: block; 
+  font-family: 'Arvin';  
+  }
+
+.site-footer > .container { 
+    min-width:500px; 
+    margin: 0 auto; 
+    padding: 10px 10px; 
+    box-sizing: border-box;
+    border: 1px #6699ff; 
+    }
+
+.column, .columns { 
+    width: 100%; 
+    float: right; 
+    box-sizing: border-box; 
+}
+
+.site-footer { 
+   position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+ /* background-color: rgba(0,26,77, .6);*/
+  background-color: rgba(255,26,26, .8);
+  text-align: center;
+  height: 50px;
+}
+
+.site-footer .left a { 
+    color: #666; 
+    border-bottom: 1px; 
+    text-decoration: none; 
+}
+
+.site-footer .left a:hover { 
+    color: red;
+    border-bottom: 1px; 
 }
 
 .footer { 
-  display: block; }
-
-.site-footer > .container {  margin: 0 auto; padding: 10px 10px; box-sizing: border-box; /* for test only */ border: 1px #eeeeee; }
-
-.column, .columns { width: 100%; float: right; box-sizing: border-box; }
-
-
-.site-footer { position: absolute; bottom: 0; padding-bottom: 0rem; width: 100%; /* footer style */ color: blue; background-color: #FAFAFB; }
-.site-footer .left a { color: #666; border-bottom: 1px; text-decoration: none; }
-.site-footer .left a:hover { color: red; border-bottom: 1px; }
-
-.container > .site_footer {
-    min-width: 500px;
+    float: left; 
+    color:  #dddddd;
 }
 
-/* footer */
-.footer { float: left; }
+.left { 
+    text-align: left; 
+    padding-top: 5px;
+}
 
-.left { text-align: left; padding-top: 5px; }
+.right { 
+    text-align: right;
+}
 
-.right { text-align: right; }
+.left.column {
+    width: 70%;
+}
 
-body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+.right.column {
+    width: 30%;
 }

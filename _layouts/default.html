@@ -6,29 +6,16 @@
 	<!-- link to main stylesheet -->
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
 
-
 </head>
-<!-- background="/images/who60.jpg" -->
+
+<body>
+
+	{% include nav.html %}
 
 
-<body background="/images/who60.jpg">
-
-	{% include navigation_bar.html %}
-	
-
-		<div class="image-bg-fluid-height">
-			<img class="sml img-responsive img-center" src="/images/logo.jpg" alt="">			
-		</div>
-
-		<div class="title-name">
-		<h1 style="color: #003B6F; font-weight: 700; font-size: 60; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;">
-			Ondrej Selecký </h1>
-		</div>
-
-		<div class="container">
+	<div class="container">
 
 		{{ content }}
 
