@@ -1,12 +1,86 @@
+--- 
+layout: default 
+title: CV 
+description: Životopis 
+navigation_weight: 3 
 ---
-layout: default
-title: CV
-description: Životopis
-navigation_weight: 3
----
-{% for part in site.cv_parts %}
-	<div class="part">
-		<h2><a href="{{ part.url }}">{{ part.title }}</a></h2>
-		{{ part.content }}
+
+<div class="cv-section">
+	<div class="personal-info">
+		<h1>{{ site.name }}</h1>
+		<div class="cv-section-h2"><h2>Personal information</h2></div>
+		<table>
+			<col width="130px">
+			<col width="220px">
+			<tr>
+				<th>Address:</th>
+				<td>{{site.address}}</td>
+			</tr>
+			<tr>
+				<th>Phone number:</th>
+				<td>{{site.phone}}</td>
+			</tr>
+			<tr>
+				<th>Email:</th>
+				<td>{{site.email}}</td>
+			</tr>
+			<tr>
+				<th>Age:</th>
+				<td>{{site.age}}</td>
+			</tr>
+		</table>
+		<p>
 	</div>
-{% endfor %}
+	<div class="personal-image">
+		<img class="img-cv" src="/images/logo.jpg">
+	</div>
+</div> 
+
+<div class="cv-section">
+	<div class="cv-section-h2"><h2>Education</h2></div>
+	
+	{% for edu in site.data.education %}
+		<div class="entry">
+			<p class="school-name bold">{{ edu.school }}, {{ edu.city }}</p>
+        	<p class="date">{{ edu.start_year }} - {{ edu.end_year }}</p>
+			<p class="field">{{ edu.field }}</p>
+		</div>
+	{% endfor %}
+</div>
+
+<div class="cv-section">
+	<div class="cv-section-h2"><h2>Work experience</h2></div>
+	{% for work in site.data.work %}
+		<div class="entry">
+			<p class="company-name bold">{{ work.company }}</p>
+       	 	<p class="date type">{{ work.start_date }} - {{ work.end_date }}, {{ work.type }}</p>		
+			<p class="description"> {{ work.description }}</p>
+		</div>
+	{% endfor %}
+</div>
+
+<div class="cv-section">
+	<div class="cv-section-h2"><h2>Knowledge</h2></div>
+	{% for type in site.data.knowledge %}
+		<div class="entry">
+			<p class="type bold">{{ type.type }}</p>
+			{% for knowledge in type.values %}
+
+				{% assign identificator = knowledge.description %}
+				{% assign description = site.knowledge_levels[identificator] %}
+			
+        		<p class="knowledge">{{ knowledge.name }} - 
+					<i>{{ description }} {% if type.type == "Language skills" %} ({{identificator}}) {% endif %}</i></p>
+
+			{% endfor %}
+		</div>
+	{% endfor %}
+
+	<p class="type bold">Driving license</h2></div>
+	{% for license in site.data.driving %}
+		<div class="entry">
+			<p class="license-type">{{ license.type }}, najazdených {{license.distance}} {{license.unit}}</p>	
+		</div>
+	{% endfor %}
+
+</div>

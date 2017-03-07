@@ -20,10 +20,14 @@ body {
 
 .container {
    position: relative; 
-    width: 55%; 
+    width: 600px; 
     min-height: 100%;    
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
 }
+
 
 .wrapper {
  min-height: 100vh; /* will cover the 100% of viewport */
@@ -34,7 +38,7 @@ body {
 }
 
 .content {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 
@@ -49,11 +53,7 @@ h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
+
 
 ul.posts { 
     margin: 20px auto 40px; 
@@ -78,8 +78,12 @@ ul.posts li {
     font-family: 'Arvin';
 }
 
-.navbar > .container {
-    width: 56%;
+
+.navbar-container {
+    position: relative; 
+    width: 700px;
+    margin-right: 20px;
+     margin: 0 auto;
 }
 
 li {
@@ -98,7 +102,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding:  14px 16px;
     text-decoration: none;
 }
 
@@ -211,4 +215,56 @@ li a:hover:not(.active) {
 
 .right.column {
     width: 30%;
+}
+
+/*
+CV
+*/
+
+th {
+    text-align: left;
+}
+
+.personal-info {
+    float: left;
+    width: 350px;
+}
+
+.personal-image {
+    float: right;
+    width: 250px;    
+    text-align: right;
+}
+
+.img-cv {
+    width: 230px;
+    right: 0px;
+    margin-top: 40px;
+}
+
+.cv-section {
+    overflow: hidden;
+}
+
+.cv-section-h2 {
+    border-width: 0 0 1px 0;
+    border-bottom-color: black;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+.cv-section > .entry {
+    margin-bottom: 15px;
+}
+
+.bold {
+    font-weight: bold;
 }

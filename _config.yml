@@ -1,7 +1,20 @@
+
+# Site data
 name: Ondrej Selecký
 age: 21
-
-collections:
-  cv_parts:
+address: J. Thurzu 1630/4, 96212 Detva
+email: ondryk.selecky@gmail.com
+github: https://github.com/OndrykSelecky
+facebook: https://www.facebook.com/ondrej.selecky
+phone: +421944338368
  
-    
+knowledge_levels:
+  "1": basic
+  "2": advanced
+  "3": expert
+  "A1": basic user
+  "A2": basic user
+  "B1": independent user
+  "B2": independent user
+  "C1": proficient user
+  "C2": proficient user
