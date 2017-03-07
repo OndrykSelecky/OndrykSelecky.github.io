@@ -18,3 +18,7 @@ knowledge_levels:
   "B2": independent user
   "C1": proficient user
   "C2": proficient user
+
+collections:
+    books:
+      output: true

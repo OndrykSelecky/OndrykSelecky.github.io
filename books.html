@@ -1,0 +1,18 @@
+---
+layout: default
+title: Books
+description: My books
+navigation_weight: 5
+---
+<div class="book-container" style="position: relative; min-height: 300px">
+{% for book in site.books %}
+
+    <div class="book" style="float: left; text-align: center; margin: 50px; ">
+        <a href="{{ book.url }}">
+            <img src="{{book.image_link}}" style="height: 200px">
+            <h2>{{ book.title }}</h2>
+        </a>
+    </div>
+
+{% endfor %}
+</div>
