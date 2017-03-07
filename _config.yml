@@ -1,3 +1,4 @@
 collections:
   cv_parts:
+  output: true
     
