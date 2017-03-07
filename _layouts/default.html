@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<title>{{ page.title }}</title>
-	<!-- link to main stylesheet -->
+<div class="wrapper">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<head>
+		<title>{{ page.title }}</title>
+		<!-- link to main stylesheet -->
 
-</head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
 
-<body>
+	</head>
+
+	<body>
+
+		<div class="header">
+			{% include nav.html %}
+		</div>
+
+		<div class="content {% if page.title != "Home" %} container {% endif %}">
+			{{ content }}
+		</div>
+
+		<footer class="site-footer">
+			{% include footer.html %}
+		</footer>
+
+	</body>
 
 
-	{% include nav.html %}
-
-	{% if page.description != "Home" %} <div class="container"> {% endif %}
-
-		{{ content }}
-
- 	{% if page.description != "Home" %} </div> {% endif %}
-
-	{% include footer.html %}
-
-</body>
+</div>
 
 </html>

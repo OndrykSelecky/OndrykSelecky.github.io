@@ -2,25 +2,41 @@
 @font-face { font-family: Kelvetica; src: url('/fonts/Kelvetica.ttf'); } 
 @font-face { font-family: Arvin; src: url('/fonts/Arvin Regular.ttf'); } 
 
-body {   
-    width: 100%;
-    min-height: 100%;
-    margin-left: 0px;
-    margin-top: 0px;
+
+body {
+    height:100%;
+    position: relative;
+}
+
+body {       
+    margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: 100%;
     background-size:cover;
+    
 }
 
-
-.container { 
-    position: relative; 
+.container {
+   position: relative; 
     width: 55%; 
     min-height: 100%;    
     margin: 0 auto;
 }
+
+.wrapper {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ 
+}
+
+.content {
+    padding-bottom: 50px;
+}
+
 
 a {
     text-decoration: none;
@@ -52,7 +68,7 @@ ul.posts li {
     Navbar
 */
 
-ul {
+.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -60,6 +76,10 @@ ul {
     background-color: #333;
     max-height: 50px;
     font-family: 'Arvin';
+}
+
+.navbar > .container {
+    width: 56%;
 }
 
 li {
@@ -119,8 +139,7 @@ li a:hover:not(.active) {
 
 
 .title-name h1 {    
-    /*background-color: #dddddd; 
-     border-radius: 20px; */
+    
     display: inline;
     font-size: 36;  
     color: #dddddd; 
@@ -144,15 +163,6 @@ li a:hover:not(.active) {
   font-family: 'Arvin';  
   }
 
-.footer-container { 
-    min-width:500px; 
-    margin: 0 auto; 
-    padding: 10px 10px; 
-    box-sizing: border-box;
-    border: 1px #6699ff; 
-    width: 55%;
-    }
-
 .column, .columns { 
     width: 100%; 
     float: right; 
@@ -160,14 +170,13 @@ li a:hover:not(.active) {
 }
 
 .site-footer { 
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position:absolute;
+   bottom:0;
+   height:50px; 
+   width:100%;
  /* background-color: rgba(0,26,77, .6);*/
   background-color: rgba(255,26,26, .8);
   text-align: center;
-  height: 50px;
 }
 
 .site-footer .left a { 
@@ -188,11 +197,12 @@ li a:hover:not(.active) {
 
 .left { 
     text-align: left; 
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 .right { 
     text-align: right;
+    padding-top: 10px;
 }
 
 .left.column {
