@@ -5,7 +5,7 @@
 
 body {
     height:100%;
-    position: relative;
+    position: relative;    
 }
 
 body {       
@@ -31,10 +31,8 @@ body {
 
 .wrapper {
  min-height: 100vh; /* will cover the 100% of viewport */
- overflow: hidden;
  display: block;
  position: relative;
- 
 }
 
 .content {
@@ -82,8 +80,7 @@ ul.posts li {
 .navbar-container {
     position: relative; 
     width: 700px;
-    margin-right: 20px;
-     margin: 0 auto;
+    margin: 0 calc((100vw - 700px)/2) 0 calc((100vw - 700px)/2);
 }
 
 li {
