@@ -1,6 +1,6 @@
 
 @font-face { font-family: Kelvetica; src: url('/fonts/Kelvetica.ttf'); } 
-@font-face { font-family: Arvin; src: url('/fonts/Arvin Regular.ttf'); } 
+@font-face { font-family: Arvin; src: url('/fonts/ArvinRegular2.ttf'); } 
 
 
 body {
@@ -13,6 +13,7 @@ body {
     background-size: 100%;
     background-size:cover;
     font-family:'Arvin';
+    min-width: 500px;
 }
 
 .container {
@@ -47,9 +48,13 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Arvin', 'Arial', 'Sans-Serif';
 }
 
+h2 {
+    
+    font-size: 25px;
+}
 
 ul.posts { 
     margin: 20px auto 40px; 
@@ -267,3 +272,51 @@ p {
 /*
     Books
 */
+
+
+.right-image {
+    max-width: 300px;
+    margin: 10px;
+    float: right;
+}
+
+.left-image {
+    max-width: 300px;
+    margin: 10px;
+    float: left;
+}
+
+.book {
+     position: relative;
+     min-height: 450px;
+}
+
+.book > h2 {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+}
+
+.book > h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top:0px
+}
+
+.book > p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.book-list {
+    float: left; 
+    text-align: center; 
+    margin: 20px; 
+    width: 160px 
+}
+
+.reference-image {
+    height: 30px; 
+    float: right;
+    margin-left: 5px;
+}

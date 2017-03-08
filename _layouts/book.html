@@ -1,10 +1,15 @@
 ---
 layout: default
 ---
-<div class="book" style="position: relative; min-height: 450px">
-  <h2 style="text-align: center; margin-bottom: 30px">{{ page.title }}</h2>
+<div class="book">
+  <h2>{{ page.title }}</h2>
+  <h3>{{ page.author }}</h3>
   
-  <img src="{{ page.image_link }}" alt="page.title" style="height: 450px; float: left; margin-bottom: 4px; margin-right: 20px; position: relative"/>
-  <p style="float: right">{{ content }}  </p>
+ {{ content }}
 </div>
-<p><a href="{{ page.goodreads_link }}">goodreads link</a></p>
+<div>
+  <p>
+    <a href="{{ page.goodreads }}"> <img class="reference-image" src="/images/goodreads_logo.jpg" alt="Odkaz na goodreads"/> </a>
+    <a href="{{ page.martinus }}"> <img class="reference-image" src="/images/martinus_logo.jpg" alt="Odkaz na goodreads"/> </a>  
+  </p>
+</div>

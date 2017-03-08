@@ -4,13 +4,17 @@ title: Books
 description: My books
 navigation_weight: 5
 ---
-<div class="book-container" style="position: relative; min-height: 300px">
-{% for book in site.books %}
+{% assign number = site.books.size | minus: 1 | divided_by: 3 | plus: 1 | times: 300 | plus: 40 %}
 
-    <div class="book" style="float: left; text-align: center; margin: 50px; ">
+<div class="book-container" style="position: relative; min-height: {{number}}px; margin-top: 30px"> 
+
+{% assign my_books = site.books | sort: 'rating'  %}  
+{% for book in my_books%}
+
+    <div class="book-list" style="height: 300px">
         <a href="{{ book.url }}">
-            <img src="{{book.image_link}}" style="height: 200px">
-            <h2>{{ book.title }}</h2>
+            <img src="{{ book.cover_image }}" style="height: 200px">
+            <h2 style="margin-top: 0px">{{ book.title }}</h2>
         </a>
     </div>
 

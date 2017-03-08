@@ -22,3 +22,5 @@ knowledge_levels:
 collections:
     books:
       output: true
+
+markdown: kramdown
