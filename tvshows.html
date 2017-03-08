@@ -1,0 +1,22 @@
+---
+layout: default
+title: Shows
+description: Moje obľúbené seriály
+navigation_weight: 6
+---
+
+<!--
+{% for member in site.data.shows %}      
+    {% assign rating = site.data[member.jdata].hodnoceni %}    
+{% endfor %}
+
+ <a href= "{{ show.site_url }}" alt="{{ show.title }}: odkaz na serialzone.cz">
+        <img src="{{ show.image_url }}"/>        
+</a>
+-->
+
+<div class="shows" style="margin-top: 30px">
+    {% for show in site.data.shows %}    
+        {{ show.value }}
+    {% endfor %}
+</div>
