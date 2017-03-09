@@ -5,20 +5,17 @@ description: Môj blog
 navigation_weight: 4
 ---
 
-  <h2 class="spacing">Blog</h2>
+{% for post in site.posts %}
+  <div class="blog-post">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
-  <div class="blog-posts">
-    {% for post in site.posts %}
-      <div class="blog-post spacing">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p class="summary">
-          {{ post.category }}
-          <span class="date">
-            {{ post.date | date: '%B %d, %Y' }}
-          </span>
-        </p>
-        {{ post.excerpt }}
-      </div>
-    {% endfor %}
+    <p class="summary" align="left">
+      <h3>
+        <span class="subtitle">{{ post.subtitle }}</span>
+        <span class="date" style="float: right"> <i>{{ post.date | date: '%d. %b. %Y' }}</i> </span>
+      </h3>
+    </p>
+
+    {{ post.excerpt }}
   </div>
-
+{% endfor %}

@@ -8,7 +8,7 @@ module Jekyll_Get
     priority :highest
 
     def generate(site)
-      config = site.data['shows']
+      config = site.data['test']
       if !config
         return
       end

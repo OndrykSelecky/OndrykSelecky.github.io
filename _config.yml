@@ -22,6 +22,9 @@ knowledge_levels:
 collections:
     books:
       output: true
-
+    hobbies:
+      output: true
+      
 markdown: kramdown
+
 
