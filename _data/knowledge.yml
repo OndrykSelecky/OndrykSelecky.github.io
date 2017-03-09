@@ -25,6 +25,8 @@
     description: "1"
   - name: Enterprise Architect
     description: "1"
+  - name: Git
+    description: "1"
 
 # "1" - basic, "2" - advanced, "3" - expert
 - type: Programming Languages
