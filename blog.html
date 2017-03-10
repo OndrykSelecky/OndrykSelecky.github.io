@@ -12,10 +12,10 @@ navigation_weight: 4
     <p class="summary" align="left">
       <h3>
         <span class="subtitle">{{ post.subtitle }}</span>
-        <span class="date" style="float: right"> <i>{{ post.date | date: '%d. %b. %Y' }}</i> </span>
+        <span class="date" style="float: right"> <i>{{ post.date | timeago }}</i> </span>
       </h3>
     </p>
-
+<!--date: '%d. %b. %Y'-->
     {{ post.excerpt }}
   </div>
 {% endfor %}

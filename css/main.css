@@ -360,5 +360,9 @@ blog
 
 .in-blog h3 {
      margin-top: 02px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.in-blog .date {
+    margin-bottom: 10px;
 }

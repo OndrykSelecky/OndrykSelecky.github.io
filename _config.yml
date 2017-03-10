@@ -27,3 +27,6 @@ collections:
       
 markdown: kramdown
 
+gems:
+  - jekyll-timeago
+  - jemoji
