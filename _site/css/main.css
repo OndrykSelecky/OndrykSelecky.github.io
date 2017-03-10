@@ -397,7 +397,13 @@ Hobby
     margin-bottom: 10px;
 }
 
-.about-me p {
+.about-me h3 {
+    margin: 0px;
+    text-align: right;
+}
+
+
+p {
     text-align: justify;
     margin-bottom: 5px;
 }

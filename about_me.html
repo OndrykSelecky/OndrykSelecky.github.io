@@ -11,11 +11,14 @@ navigation_weight: 2
 
     {% assign abouts = site.abouts | sort: 'index' %}
     {% for about in abouts %}    
-        {% if about.link %}
-            <h2><a href="{{ about.link }}" alt="{{ about.title }}">{{ about.title }} </a></h2>
-        {% else %}
-            <h2> {{ about.title }}</h2> 
-        {% endif %}
+
+        <h2> {{ about.title }}</h2>   
+
         {{ about.content }}
+
+        {% if about.link %}
+            <h3><a href="{{ about.link }}" alt="{{ about.title }}">{{ about.description }} </a></h3>        
+        {% endif %}
+
     {% endfor %}
 </div>

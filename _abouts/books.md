@@ -2,6 +2,7 @@
 layout: default
 title: Knihy
 link: /mybooks.html
+description: Moje obľúbené knihy
 index: 2
 ---
 

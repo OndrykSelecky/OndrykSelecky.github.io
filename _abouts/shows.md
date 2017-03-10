@@ -2,6 +2,7 @@
 layout: default
 title: Seriály
 link: /myshows.html
+description: Moje obľúbené seriály
 index: 3
 ---
 
