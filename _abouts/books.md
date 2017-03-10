@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Knihy
-link: /myshows.html
+link: /mybooks.html
 index: 2
 ---
 
