@@ -199,7 +199,6 @@ li a:hover:not(.active) {
      color:black
 }
 
-
 .footer { 
     float: left; 
     color:  #dddddd;
@@ -334,6 +333,12 @@ p {
     margin-left: 5px;
 }
 
+.book-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
 /*
 Shows
 */
@@ -377,6 +382,11 @@ blog
     margin-bottom: 10px;
 }
 
+.in-blog p {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
 /*
 Hobby
 */
@@ -403,7 +413,16 @@ Hobby
 }
 
 
-p {
+.about-me p {
     text-align: justify;
     margin-bottom: 5px;
+}
+
+.about-me li {
+    margin-bottom: 5px;
+}
+
+.about-me ul {
+    height: 100%;
+    margin: 0px;
 }

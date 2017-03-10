@@ -3,9 +3,14 @@ layout: default
 title: Books
 description: Moje obľúbené knihy
 ---
-{% assign number = site.books.size | minus: 1 | divided_by: 3 | plus: 1 | times: 300 | plus: 40 %}
+
+<!-- Pri float rozmiestnení sa mi veľkosť containera nastavil na 0, preto ju vopred vypočítam.
+    Inak by sa footer prekrýval s obrázkami -->
+{% assign number = site.books.size | minus: 1 | divided_by: 3 | plus: 1 | times: 300 | plus: 100 %}
 
 <div class="book-container" style="position: relative; min-height: {{number}}px;"> 
+
+<h2>{{page.description}}</h2>
 
 {% assign my_books = site.books | sort: 'rating'  %}  
 {% for book in my_books%}

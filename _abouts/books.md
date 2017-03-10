@@ -4,6 +4,7 @@ title: Knihy
 link: /mybooks.html
 description: Moje obľúbené knihy
 index: 2
+type: personal
 ---
 
 Už od prvého ročníka základnej školy rád čítam a vzdelávam sa. Rozprávky a básničky postupne nahradili diela slovenských aj svetových autorov. Spektrum mojich obľúbených žánrov je rôznorodé. Mám rád sci-fi, fantasy, detektívky a kriminálne romány, ako aj klasické diela od najrôznejšich spisovateľov. Dokážem si vychutnať aj poéziu.

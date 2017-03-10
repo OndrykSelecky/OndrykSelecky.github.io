@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="about-me">
+    <h1>{{ page.description }}</h1>
+    {% assign abouts = site.abouts %}
+    {% for about in abouts %}
+        {% if about.type == page.type %}
+            <h2> {{ about.title }}</h2> 
+            {{ about.content }}
+            {% if about.link %}
+                <h3><a href="{{ about.link }}" alt="{{ about.title }}">{{ about.description }} </a></h3>        
+            {% endif %}            
+        {% endif %}
+    {% endfor %}
+</div>

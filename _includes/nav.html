@@ -1,9 +1,9 @@
 <ul class="navbar">
     <div class="navbar-container">
 {% if page.description %}
-  {% assign description = page.description | replace: ' ', '&#160' %}
+  {% assign description = page.description %}
 {% else %}
-  {% assign description = page.title | replace: ' ', '&#160' %}
+  {% assign description = page.title %}
 {% endif %}
 
      <li class="nav-title">{{ description }}</li>

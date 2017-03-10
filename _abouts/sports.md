@@ -2,6 +2,7 @@
 layout: default
 title: Šport
 index: 4
+type: personal
 ---
 
 Čo sa týka športov, z aktívnej stránky sa veľmi nemám čím pochváliť. Nikdy ma to neťahalo k športovaniu. Rád si však pozriem športové podujatia v televízii.

@@ -23,6 +23,10 @@ collections:
     books:
       output: true
     abouts:
+    interests:
+      output: true
+    wpub:
+      output: true
       
       
 markdown: kramdown
