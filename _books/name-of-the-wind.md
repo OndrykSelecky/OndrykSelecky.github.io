@@ -6,6 +6,8 @@ cover_image: http://www.citaj.to/media/k2/items/cache/63de4f3c6303b2f95afa397bd1
 goodreads: https://www.goodreads.com/series/45262-the-kingkiller-chronicle
 martinus: http://www.martinus.sk/seria/pribeh-kralovraha
 rating: 1
+genre: 
+    - hrdinská fantasy
 ---
 
 ![Image of book]( http://data.bux.sk/book/080/054/0800545/large-strach_mudreho_muza_meno_vetra_komplet.jpg "Príbeh Kráľovraha"){: .left-image}

@@ -1,0 +1,21 @@
+---
+layout: default
+title: About me
+description: Moje záujmy
+navigation_weight: 2
+---
+<div class="about-me">
+    <h1>{{ page.description }}</h1>
+    <p>Väčšinu môjho voľného času venujem súkromiu. Keďže patrím medzi introvertných ľudí, najlepšie si oddýchnem pri tichých,
+    upokojujúcich činnostiach. Medzi patrí najmä čítanie kníh a sledovanie seriálov.</p>
+
+    {% assign abouts = site.abouts | sort: 'index' %}
+    {% for about in abouts %}    
+        {% if about.link %}
+            <h2><a href="{{ about.link }}" alt="{{ about.title }}">{{ about.title }} </a></h2>
+        {% else %}
+            <h2> {{ about.title }}</h2> 
+        {% endif %}
+        {{ about.content }}
+    {% endfor %}
+</div>

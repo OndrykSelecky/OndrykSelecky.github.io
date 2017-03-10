@@ -5,7 +5,7 @@ description: Moje obľúbené knihy
 ---
 {% assign number = site.books.size | minus: 1 | divided_by: 3 | plus: 1 | times: 300 | plus: 40 %}
 
-<div class="book-container" style="position: relative; min-height: {{number}}px; margin-top: 30px"> 
+<div class="book-container" style="position: relative; min-height: {{number}}px;"> 
 
 {% assign my_books = site.books | sort: 'rating'  %}  
 {% for book in my_books%}
@@ -20,4 +20,3 @@ description: Moje obľúbené knihy
 {% endfor %}
 </div>
 
-{% youtube i3wJjLXjySg %}

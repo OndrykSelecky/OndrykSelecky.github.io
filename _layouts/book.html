@@ -4,8 +4,18 @@ layout: default
 <div class="book">
   <h2>{{ page.title }}</h2>
   <h3>{{ page.author }}</h3>
-  
+  <p style="text-align: center; margin-bottom: 20px; font-style: italic">
+    {% for genre in page.genre %}       
+      {% if forloop.last %}
+        {{ genre }}
+      {% else %}
+        {{ genre }},
+      {% endif %}
+    {% endfor %}
+  </p> 
+  <p> 
  {{ content }}
+ </p>
 </div>
 <div>
   <p>

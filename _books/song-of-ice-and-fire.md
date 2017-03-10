@@ -6,6 +6,8 @@ cover_image: /images/asoiaf.jpg
 goodreads: https://www.goodreads.com/series/43790-a-song-of-ice-and-fire
 martinus: http://www.martinus.sk/seria/piesen-ladu-a-ohna
 rating: 1
+genre: 
+    - epické fantasy
 ---
 ![Image of book](http://fourcfitness.com/wordpress/wp-content/uploads/2014/10/A-Game-of-Thrones-Boxed-Set-7-Books-15144143-5.jpg "Pieseň ľadu a ohňa"){: .left-image}
 Séria rozpráva príbeh z krutej krajiny, kde ľudia bažia po moci, krutosti a zabíjaní. Obsahuje fantasy prvky, tie sa však skôr objavujú na pozadí a ústredný príbeh sa sústredí na konflikty medzi obyčajnými ľuďmi. Autor vytvoril svet s podrobnou históriou a množstvom postáv. Práve tie sú ťažiskom kníh, pretože autor je majstrom charakterizácie postáv a napriek ich množstvu sú ľahko rozoznateľné. Ich charakter je hlboký, nechýba im motivácia a osobitosť.

@@ -6,6 +6,8 @@ cover_image: /images/lotr.jpg
 goodreads: https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings
 martinus: http://www.martinus.sk/knihy/autor/j-r-r-tolkien
 rating: 1
+genre: 
+    - hrdinská fantasy
 ---
 
 ![J.R.R. Tolkien](http://the-hobbitmovie.com/wp-content/uploads/2010/05/JRRtolkien.jpg "J. R. R. Tolkien"){: .right-image}

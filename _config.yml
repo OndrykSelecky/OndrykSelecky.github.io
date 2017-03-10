@@ -22,11 +22,30 @@ knowledge_levels:
 collections:
     books:
       output: true
-    hobbies:
-      output: true
+    abouts:
+      
       
 markdown: kramdown
 
 gems:
   - jekyll-timeago
   - jemoji
+
+jekyll_timeago:
+  depth: 2 # Level of detail
+  today: 'dnes'
+  yesterday: 'včera'
+  tomorrow: 'zajtra'
+  and: 'a'
+  suffix: ''
+  prefix: 'pred'
+  suffix_future: ''
+  prefix_future: 'o'
+  years: 'rokmi'
+  year: 'rokom'
+  months: 'mesiacmi'
+  month: 'mesiacom'
+  weeks: 'týždňami'
+  week: 'týždňom'
+  days: 'dňami'
+  day: 'dňom'
