@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Knihy
 link: /mybooks.html
 description: Moje obľúbené knihy

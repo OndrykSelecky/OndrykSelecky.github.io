@@ -2,7 +2,7 @@
 layout: book
 title: Sherlock Holmes
 author: Arthur Conan Doyle
-cover_image: https://s-media-cache-ak0.pinimg.com/originals/45/94/77/45947764361fa473c5e3fd8858809142.jpg
+cover_image: /images/holmes.jpg
 goodreads: https://www.goodreads.com/book/show/33624850-the-complete-sherlock-holmes?from_search=true
 martinus: http://www.martinus.sk/?uItem=225178
 rating: 2

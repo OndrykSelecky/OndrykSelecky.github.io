@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Šport
 index: 4
 type: personal

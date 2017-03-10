@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Profesionálne záujmy
+layout: page
+title: Profesné záujmy
 index: 1
 type: developer
 ---

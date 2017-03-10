@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Seriály
 link: /myshows.html
 description: Moje obľúbené seriály

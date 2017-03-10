@@ -1,6 +1,6 @@
 ---
 layout: interest
 title: Developer
-description: Profesionálne záujmy
+description: Profesné záujmy
 type: developer
 ---

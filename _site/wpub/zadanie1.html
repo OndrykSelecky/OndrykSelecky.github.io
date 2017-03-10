@@ -21,6 +21,13 @@
 
      <li class="nav-title">Zadanie 1</li>
 
+<!-- O stránke - pridané odkazom na zadanie -->
+     <li style="float:right"  class="active" >
+          <a href="/wpub/zadanie1.html" >            
+            About site
+          </a>
+    </li>
+
  
     
       
@@ -59,19 +66,206 @@
 
       
 
-  
+ 
     </div>
 </ul>
 		</div>
 
 		<div class="content  container ">
 			
-			<h2 id="popis-stránky">Popis stránky</h2>
+			<div class="page-container">
+    <h2 id="popis-stránky">Popis stránky</h2>
 
-<p>Stránka</p>
+<p>Stránka má nasledujúcu štruktúru (<em>kurzívami</em> sú označené sekcie jednej stránky):</p>
+<ul>
+  <li>Index = Home</li>
+  <li>Navigation bar:
+    <ul>
+      <li>Home</li>
+      <li>About me
+        <ul>
+          <li>Profesionálne záujmy
+            <ul>
+              <li><em>Profesionálne záujmy</em></li>
+              <li><em>Webové publikovanie</em>
+                <ul>
+                  <li>Zadanie 1</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Osobné záujmy
+            <ul>
+              <li><em>Knihy</em>
+                <ul>
+                  <li>Moje obľúbené knihy
+                    <ul>
+                      <li>Stránky kníh</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><em>Seriály</em>
+                <ul>
+                  <li>Moje obľúbené seriály</li>
+                </ul>
+              </li>
+              <li><em>Šport</em></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>CV</li>
+      <li>Blog</li>
+      <li>About site ( Zadanie 1)</li>
+    </ul>
+  </li>
+</ul>
 
-<p>Druhé</p>
+<p>Popis zadania je na stránke <strong>Zadanie 1</strong>.</p>
 
+<p>Stránka knihy obsahuje zoznam niekoľkých kníh. K prvým trom som vytvoril vlastný text, zvyšné obsahujú texty z externých zdrojov alebo žiadne.</p>
+
+<h2 id="popis-riešenia">Popis riešenia</h2>
+
+<p>V počiatočných fázach dizajnu som pracoval s bootstrapom, potom som však od neho upustil a štýly som si vytvoril sám.
+Inšpiráciu som si zobral z nasledujúcich šablon:</p>
+
+<ul>
+  <li>Vytváraním CV prostredníctvom dátových súborov som sa inšpiroval na <a href="https://github.com/mattcouchman/jekyll-resume/tree/master/_data">https://github.com/mattcouchman/jekyll-resume/tree/master/_data</a></li>
+  <li>Inšpirácia pre dizajn: <a href="https://github.com/BlackrockDigital/startbootstrap-full-width-pics">https://github.com/BlackrockDigital/startbootstrap-full-width-pics</a></li>
+  <li>Pri vytváraní som použil časti z tutoriálu <a href="http://jekyll.tips/">http://jekyll.tips/</a>, najmä kolekcie.</li>
+</ul>
+
+<h4 id="Šablony-layouts">Šablony (layouts)</h4>
+
+<p>Stránka obsahuje tieto šablóny:</p>
+<ol>
+  <li><em>Default</em>. Použitá je na úvodnej stránke a na väčšine ostatných. Zvyšné šablóny sú od nej odvodené.</li>
+  <li><em>Page</em>. Od <em>default</em> šablóny sa líši formátovaním, ktoré je v nej použité.</li>
+  <li><em>Interest</em>. Táto šablóna vytvorí zoskupí na jednej stránke záujmy z <em>abouts</em> podľa toho, ku ktorému typu z <em>interests</em> patria (Osobné alebo profesné)</li>
+  <li><em>Post</em>. Šablóna pre príspevok v blogu. Obsahuje dátum, nadpis a podnadpis.</li>
+  <li><em>Book</em>. Použitá pre stránku o knihe. Kniha obsahuje názov knihy, meno autora, žánre, titulný obrázok a iné.</li>
+</ol>
+
+<h4 id="premenné">Premenné</h4>
+
+<p>Napríklad každá stránka knihy obsahuje tieto premenné:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>---
+layout: //názov layoutu
+title: //titul
+author: //meno autora
+cover_image: //adresa titulného obrázka
+goodreads: //url na goodreads.com
+martinus: //url na martinus.sk
+rating: //rating, podľa ktorého sa sortuje pri zobrazovaní
+genre:  //pole žánrov
+    - román
+    - magický realizmus
+---
+</code></pre>
+</div>
+
+<p>Vlastné premenné majú takmer všetky stránky.</p>
+
+<h4 id="tagy">Tagy</h4>
+
+<p>Použité sú <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">include</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code> tagy:</p>
+<ul>
+  <li>Navigation bar. Uložený je v súbore <em>nav.html</em>. Include sa nachádza v šablóne <em>default</em>.</li>
+  <li>
+    <p>Footer. Uložený je v súbore <em>footer.html</em>.</p>
+  </li>
+  <li>V tomto článku sú použité taky <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">raw</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code> a <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">endraw</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code> na escape liquid tagov.</li>
+</ul>
+
+<h4 id="filtre">Filtre</h4>
+
+<ul>
+  <li>V <em>nav.html</em> sa do navigačného panela ukladajú odkazy na základe hodnoty premennej navigation_weight: 
+<code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">assign</span><span class="w"> </span><span class="err">navigation_pages</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">site.html_pages</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">sort:</span><span class="w"> </span><span class="err">'navigation_weight'</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">reverse</span><span class="w"> </span><span class="err">%</span><span class="p">}</span></code></li>
+  <li>Sort sa používa aj v <em>mybooks.html</em>, kde sa knihy zobrazujú na základe hodnoty premennej rating: <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">assign</span><span class="w"> </span><span class="err">my_books</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">site.books</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">sort:</span><span class="w"> </span><span class="err">'rating'</span><span class="w">  </span><span class="err">%</span><span class="p">}</span></code></li>
+  <li>Dátumový filter v layoute <em>post.html</em>: <code class="highlighter-rouge"><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">page.date</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">date:</span><span class="w"> </span><span class="err">'%d.</span><span class="w"> </span><span class="err">%b.</span><span class="w"> </span><span class="err">%Y'</span><span class="w"> </span><span class="p">}</span><span class="err">}</span></code></li>
+</ul>
+
+<h4 id="dátové-súbory">Dátové súbory</h4>
+
+<p>Jednotlivé záznamy v sekciách životopisu, ako napríklad štúdium alebo znalosti, sú uložené v dátových súboroch yaml v priečinku <em>_data</em>. Napríklad znalosti sú vymenované v poliach v súbore <em>knowledge.yml</em>:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>- type: Language skills
+  values:
+    - name: Anglický jazyk
+      description: "C1"
+    - name: Nemecký jazyk
+      description: "A1"
+
+- type: Computer skills
+  values:
+  - name: Microsoft Excel
+    description: "2"
+  - name: Microsoft Word
+    description: "3"
+  - name: Microsoft PowerPoint
+    description: "3"
+</code></pre>
+</div>
+
+<p>Znalosti sa potom načítavajú pomocou for cyklu v <em>cv.html</em>. Hodnota description udáva úroveň znalosti. Tá sa ešte nahradí, poprípade doplní textovým pomenovaním. Textové pomenovania sú uložené v poli <em>knowledge_levels” v __config.yml</em>:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>knowledge_levels:
+  "1": basic
+  "2": advanced
+  "3": expert
+  "A1": basic user
+  "A2": basic user
+  "B1": independent user
+  "B2": independent user
+  "C1": proficient user
+  "C2": proficient user
+</code></pre>
+</div>
+
+<p>Nahradenie sa vykonáva prostredníctvom []:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">for</span><span class="w"> </span><span class="err">knowledge</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">type.values</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+  </span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">assign</span><span class="w"> </span><span class="err">identificator</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">knowledge.description</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+  </span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">assign</span><span class="w"> </span><span class="err">description</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">site.knowledge_levels[identificator]</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">			
+  </span><span class="err">&lt;!--</span><span class="w"> </span><span class="err">výpis</span><span class="w"> </span><span class="err">--&gt;</span><span class="w">
+</span><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">endfor</span><span class="w"> </span><span class="err">%</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<h4 id="kolekcie">Kolekcie</h4>
+
+<p>V <em>_config.yml</em> sú definované tieto kolekcie:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>collections:
+  books:
+    output: true
+  interests:
+    output: true
+  abouts:
+  wpub:
+    output: true
+</code></pre>
+</div>
+
+<p>Kolekcia <em>books</em> uchováva stránky jednotlivých kníh.<br />
+Kolekcia <em>interests</em> sa používa na stránky kategórií záujmov - osobné alebo profesné<br />
+Kolekcia <em>abouts</em> uchováva jednotlivé záľuby - knihy, seriály, webové publikovanie.<br />
+Kolekcia <em>wpub</em> uchováva stránky zadaní k predmetu Webové publikovanie.</p>
+
+<h4 id="pluginy">Pluginy</h4>
+
+<p>Pluginy sú použité v blogu a postoch.</p>
+<ul>
+  <li><em>jemoji</em>. Slúži na zobrazovanie emotikonov. Funguje aj na githube..</li>
+  <li><em>youtube</em>. Umžňuje pridať na stránku video z youtube.</li>
+  <li><em>jekyll-timeago</em>. Vykonáva konverziu dátumu, ktorý zobrazuje časový rozdiel. Použitý je v <em>blog.html</em> pri dátumoch postov, je potrebné spustiť na localhoste.</li>
+</ul>
+
+
+</div>
 		</div>
 
 		<footer class="site-footer">

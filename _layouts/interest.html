@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: page
 ---
 
-<div class="about-me">
+
     <h1>{{ page.description }}</h1>
     {% assign abouts = site.abouts %}
     {% for about in abouts %}
@@ -14,4 +14,3 @@ layout: default
             {% endif %}            
         {% endif %}
     {% endfor %}
-</div>
