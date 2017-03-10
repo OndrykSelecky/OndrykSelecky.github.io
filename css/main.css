@@ -199,7 +199,6 @@ li a:hover:not(.active) {
      color:black
 }
 
-
 .footer { 
     float: left; 
     color:  #dddddd;
@@ -377,6 +376,11 @@ blog
     margin-bottom: 10px;
 }
 
+.in-blog p {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
 /*
 Hobby
 */
@@ -403,7 +407,7 @@ Hobby
 }
 
 
-p {
+.about-me p {
     text-align: justify;
     margin-bottom: 5px;
 }
