@@ -83,8 +83,8 @@ ul.posts li {
 
 .navbar-container {
     position: relative; 
-    width: 700px;
-    margin: 0 calc((100vw - 700px)/2) 0 calc((100vw - 700px)/2);
+    width: 650px;
+    margin: 0 calc((100vw - 650px)/2) 0 calc((100vw - 650px)/2);    /* scroll ba */
 }
 
 .navbar-container li {
@@ -216,7 +216,7 @@ ul.posts li {
 
 .footer.left.column {
     width: 70%;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .footer.right.column {

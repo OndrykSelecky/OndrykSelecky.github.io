@@ -9,7 +9,7 @@ rating: 1
 genre: 
     - epické fantasy
 ---
-![Image of book](images/asoiaf_in.jpg "Pieseň ľadu a ohňa"){: .left-image}
+![Image of book]( /images/asoiaf_in.jpg "Pieseň ľadu a ohňa"){: .left-image}
 Séria rozpráva príbeh z krutej krajiny, kde ľudia bažia po moci, krutosti a zabíjaní. Obsahuje fantasy prvky, tie sa však skôr objavujú na pozadí a ústredný príbeh sa sústredí na konflikty medzi obyčajnými ľuďmi. Autor vytvoril svet s podrobnou históriou a množstvom postáv. Práve tie sú ťažiskom kníh, pretože autor je majstrom charakterizácie postáv a napriek ich množstvu sú ľahko rozoznateľné. Ich charakter je hlboký, nechýba im motivácia a osobitosť.
 
 Dej knihy sa zameriava na vojnu piatich kráľov, kde medzi sebou súperia viaceré rody: Baratheon, Targaryen, Lannister, a mnohé iné. Ich predstavitelia využívajú na dosiahnutie cieľov nielen vojská, ale aj intrigy a podlé úskoky. Prostredie dotvárajú aj dôkladné opisy miest, krajiny a fiktívnych zvykov. Nechýbajú fiktívne jazyky či mapy.

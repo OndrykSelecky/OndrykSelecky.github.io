@@ -1,12 +1,7 @@
 <ul class="navbar">
     <div class="navbar-container">
-{% if page.description %}
-  {% assign description = page.description %}
-{% else %}
-  {% assign description = page.title %}
-{% endif %}
 
-     <li class="nav-title">{{ description }}</li>
+     <li class="nav-title">{{ page.title }}</li>
 
 <!-- O stránke - pridané odkazom na zadanie -->
      <li style="float:right" {% if "/wpub/zadanie1.html" == page.url %} class="active" {% endif %}>
@@ -20,7 +15,7 @@
       {% if p.navigation_weight %}
         <li style="float:right" {% if p.url == page.url %} class="active" {% endif %}>
           <a href="{{ p.url }}" >            
-            {{ p.title }}
+            {{ p.navbar-description }}
           </a>
         </li>
       {% endif %}

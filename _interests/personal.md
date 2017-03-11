@@ -1,6 +1,5 @@
 ---
 layout: interest
-title: Personal
-description: Osobné záujmy
+title: Osobné záujmy
 type: personal
 ---

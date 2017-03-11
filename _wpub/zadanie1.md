@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Zadanie 1
-description: Zadanie 1
+navbar-description: Zadanie 1
 ---
 
 ## Popis stránky
@@ -77,7 +77,7 @@ Použité sú `{% raw  %}{% include %}{% endraw %}` tagy:
 + Navigation bar. Uložený je v súbore _nav.html_. Include sa nachádza v šablóne _default_.
 + Footer. Uložený je v súbore _footer.html_.
 
-+ V tomto článku sú použité taky `{% raw %}{% raw %}{% endraw %}` a `{{ "{% endraw " }}%}` na escape liquid tagov.
++ V tomto článku sú použité tagy `{% raw %}{% raw %}{% endraw %}` a `{{ "{% endraw " }}%}` na escape liquid tagov.
 
 
 #### Filtre
@@ -110,7 +110,7 @@ Jednotlivé záznamy v sekciách životopisu, ako napríklad štúdium alebo zna
     description: "3"
 ~~~
 
-Znalosti sa potom načítavajú pomocou for cyklu v _cv.html_. Hodnota description udáva úroveň znalosti. Tá sa ešte nahradí, poprípade doplní textovým pomenovaním. Textové pomenovania sú uložené v poli _knowledge\_levels" v _\_config.yml_:
+Znalosti sa potom načítavajú pomocou for cyklu v _cv.html_. Hodnota description udáva úroveň znalosti. Tá sa ešte nahradí, poprípade doplní textovým pomenovaním. Textové pomenovania sú uložené v poli _knowledge\_levels v \_config.yml_:
 
 ~~~
 knowledge_levels:
