@@ -161,7 +161,7 @@ Kolekcia _wpub_ uchováva stránky zadaní k predmetu Webové publikovanie.
 
 Pluginy sú použité v blogu a postoch.
 + [_jemoji_](https://github.com/jekyll/jemoji). Slúži na zobrazovanie emotikonov. Funguje aj na githube..
-+ [_youtube_](https://gist.github.com/joelverhagen/1805814). Umžňuje pridať na stránku video z youtube. 
++ [_youtube_](https://gist.github.com/joelverhagen/1805814). Umožňuje pridať na stránku video z youtube. 
 + [_jekyll-timeago_](https://github.com/markets/jekyll-timeago). Vykonáva konverziu dátumu na časový rozdiel. Použitý je v _blog.html_ pri dátumoch postov, je potrebné spustenie na localhoste.
 
 
