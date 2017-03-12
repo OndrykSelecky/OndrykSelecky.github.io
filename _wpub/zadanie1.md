@@ -45,7 +45,7 @@ Inšpiráciu som si zobral z nasledujúcich šablon:
 Stránka obsahuje tieto šablóny:
 1. _Default_. Použitá je na úvodnej stránke a na väčšine ostatných. Zvyšné šablóny sú od nej odvodené.
 2. _Page_. Od _default_ šablóny sa líši formátovaním, ktoré je v nej použité.
-3. _Interest_. Táto šablóna vytvorí zoskupí na jednej stránke záujmy z _abouts_ podľa toho, ku ktorému typu z _interests_ patria (Osobné alebo profesné)
+3. _Interest_. Táto šablóna zoskupí na jednej stránke záujmy z _abouts_ podľa toho, ku ktorému typu z _interests_ patria (Osobné alebo profesné)
 4. _Post_. Šablóna pre príspevok v blogu. Obsahuje dátum, nadpis a podnadpis.
 5. _Book_. Použitá pre stránku o knihe. Kniha obsahuje názov knihy, meno autora, žánre, titulný obrázok a iné.
 
@@ -55,14 +55,14 @@ Stránka obsahuje tieto šablóny:
 Napríklad každá stránka knihy obsahuje tieto premenné:
 ~~~
 ---
-layout: //názov layoutu
-title: //titul
-author: //meno autora
-cover_image: //adresa titulného obrázka
-goodreads: //url na goodreads.com
-martinus: //url na martinus.sk
-rating: //rating, podľa ktorého sa sortuje pri zobrazovaní
-genre:  //pole žánrov
+layout: book                //názov layoutu
+title:  Pieseň ľadu a ohňa  //titul
+author: G. R. R. Martin     //meno autora
+cover_image:                //adresa titulného obrázka
+goodreads:                  //url na goodreads.com
+martinus:                   //url na martinus.sk
+rating: 1                   //rating, podľa ktorého sa sortuje pri zobrazovaní
+genre:                      //pole žánrov, napr:
     - román
     - magický realizmus
 ---
@@ -160,9 +160,9 @@ Kolekcia _wpub_ uchováva stránky zadaní k predmetu Webové publikovanie.
 #### Pluginy
 
 Pluginy sú použité v blogu a postoch.
-+ _jemoji_. Slúži na zobrazovanie emotikonov. Funguje aj na githube..
-+ _youtube_. Umžňuje pridať na stránku video z youtube. 
-+ _jekyll-timeago_. Vykonáva konverziu dátumu, ktorý zobrazuje časový rozdiel. Použitý je v _blog.html_ pri dátumoch postov, je potrebné spustiť na localhoste.
++ [_jemoji_](https://github.com/jekyll/jemoji). Slúži na zobrazovanie emotikonov. Funguje aj na githube..
++ [_youtube_](https://gist.github.com/joelverhagen/1805814). Umžňuje pridať na stránku video z youtube. 
++ [_jekyll-timeago_](https://github.com/markets/jekyll-timeago). Vykonáva konverziu dátumu na časový rozdiel. Použitý je v _blog.html_ pri dátumoch postov, je potrebné spustiť na localhoste.
 
 
 
