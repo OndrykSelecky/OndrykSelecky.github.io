@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<div class="wrapper">
+
+	<head>
+		<title>Zadanie 2</title>
+		<!-- link to main stylesheet -->
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+	</head>
+
+	<body>
+
+		<div class="header">
+			<ul class="navbar">
+    <div class="navbar-container">
+
+     <li class="nav-title">Zadanie 2</li>
+
+<!-- O stránke - pridané odkazom na zadanie -->
+     <li style="float:right" >
+          <a href="/wpub/zadanie1.html" >            
+            About site
+          </a>
+    </li>
+
+ 
+    
+      
+        <li style="float:right" >
+          <a href="/blog.html" >            
+            Blog
+          </a>
+        </li>
+      
+
+      
+        <li style="float:right" >
+          <a href="/cv.html" >            
+            CV
+          </a>
+        </li>
+      
+
+      
+        <li style="float:right" >
+          <a href="/about_me.html" >            
+            About me
+          </a>
+        </li>
+      
+
+      
+        <li style="float:right" >
+          <a href="/" >            
+            Home
+          </a>
+        </li>
+      
+
+      
+
+      
+
+ 
+    </div>
+</ul>
+		</div>
+
+		<div class="content  container ">
+			
+			<div class="page-container">
+    <h2 id="zadanie-2">Zadanie 2</h2>
+
+<p>Predmetom 2. zadania je spracovanie vybraného dokumentu (ideálne bakalárskeho projektu) z pôvodného ľubovoľného (Word, OpenOffice, LaTeX, …) formátu do formátu DocBook a vygenerovanie cieľového tvaru v PDF. Pozostáva z vybraných častí z mojej bakalárskej práce. Jedná sa o časti z analýzy, pretože tie obsahujú objekty a formátovania požadované zadaním.</p>
+
+<h2 id="splnenie-požadovaných-podmienok">Splnenie požadovaných podmienok</h2>
+
+<ul>
+  <li><strong>Členenie textu</strong>: kapitoly a sekcie, príloha</li>
+  <li><strong>Zvýraznenie textu</strong>: tučné písmo v zozname v 2. kapitole, premenné sú zvýraznené kurzívami</li>
+  <li><strong>Odrážky a číslovanie</strong>: použité aj nečíslované zoznamy (itemizedlist, kapitola. 2), aj číslované (orderedlist, napr. kapitola. 4, sekcia 2.2)</li>
+  <li><strong>Odkazy na iné časti</strong>: v poslednom odseku úvodu. Niektoré kapitoly dokumentu sú prázdne, je to z toho dôvodu, aby boli platné odkazy na ne a číslovanie kapitol.</li>
+  <li><strong>Literatúra a citácie</strong>: viaceré zdroje, najviac v 4. kapitole</li>
+  <li><strong>Poznámky pod čiarou</strong>: nachádzajú sa pri obrázkoch, obsahujú zdroj</li>
+  <li><strong>Obrázky</strong>: každý obrázok má titul a popis. Obrázky sú označené tagom &lt;figure&gt;, samotný súbor je vložený cez &lt;mediaobject&gt;:</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>        &lt;figure id="id"&gt;
+            &lt;title&gt; Titul &lt;/title&gt; 
+            &lt;mediaobject&gt;
+                &lt;caption&gt; Popis obrázka &lt;/caption&gt;
+                &lt;imageobject&gt;
+                    &lt;imagedata fileref="cesta k suboru"/&gt;
+                &lt;/imageobject&gt;            
+            &lt;/mediaobject&gt;           
+        &lt;/figure&gt;
+</code></pre>
+</div>
+
+<ul>
+  <li><strong>Rovnice</strong>: vložené ako obrázky, avšak namiesto &lt;figure&gt; je použitý tag &lt;equation&gt;, aby ich zobrazilo v osobitnom zozname</li>
+  <li><strong>Tabuľky</strong>: tabuľka sa nachádza v časti 4.1.2, veľkosti stĺpcov sú dané absolútne v cm.</li>
+  <li><strong>Index</strong>: 2-úrovňový</li>
+  <li><strong>Generovaný obsah</strong>: Zoznam obrázkov, tabuliek a rovníc</li>
+</ul>
+
+<h2 id="Úpravy-šablon">Úpravy šablon</h2>
+
+<p>Použité je písmo Times New Roman. Z titulnej strany bolo odstránené logo, titul práce bol odsadený, a nachádza sa nižšie. Nápis <em>vedoucí</em> bol nahradený anglickým ekvivalentom.</p>
+
+</div>
+		</div>
+
+		<footer class="site-footer">
+			
+	<div class="navbar-container">
+		
+		<div class="footer left column"> © 2017 Ondrej Selecký. Powered by <a href="https://jekyllrb.com/" alt="link to jekyll">jekyll</a>.</div>
+		<div class="footer right column">
+			<a class="fa fa-github" href="https://github.com/OndrykSelecky" style="font-size:28px;"></a>
+			<a class="fa fa-facebook-square" href="https://www.facebook.com/ondrej.selecky" style="font-size:28px;"> </a>
+			<a class="fa fa-envelope" href="mailto:ondryk.selecky@gmail.com" style="font-size:30px;"> </a>				
+		</div>
+	</div>
+
+
+
+		</footer>
+
+	</body>
+
+
+</div>
+
+</html>
