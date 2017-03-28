@@ -1,0 +1,437 @@
+
+@font-face { font-family: Kelvetica; src: url('/fonts/Kelvetica.ttf'); } 
+@font-face { font-family: Arvin; src: url('/fonts/ArvinRegular2.ttf'); } 
+
+
+body {
+    height:100%;
+    position: relative; 
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-size:cover;
+    font-family:'Arvin';
+    min-width: 500px;
+}
+
+.container {
+   position: relative; 
+    width: 600px; 
+    min-height: 100%;    
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    padding-top: 40px;
+}
+
+
+.wrapper {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ display: block;
+ position: relative;
+}
+
+.content {
+    padding-bottom: 100px;
+    height: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 3em;
+    font-family:'Arvin', 'Arial', 'Sans-Serif';
+}
+
+h2 {
+    
+    font-size: 25px;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+/*
+    Navbar
+*/
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    max-height: 50px;
+    font-family: 'Arvin';
+}
+
+
+.navbar-container {
+    position: relative; 
+    width: 650px;
+    margin: 0 calc((100vw - 650px)/2) 0 calc((100vw - 650px)/2);    /* scroll ba */
+}
+
+.navbar-container li {
+    float: left;
+}
+
+.navbar-container li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-title {
+    display: block;
+    color: white;
+    text-align: center;
+    padding:  14px 16px;
+    text-decoration: none;
+}
+
+.navbar-container li a:hover:not(.active) {
+    background-color: #333;
+}
+
+.active {
+    background-color: #111;
+}
+
+
+
+/*
+    Home screen
+*/
+
+.title-page {
+     text-align: center; 
+}
+
+.title-image {
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding-top: 50px; 
+    margin-left: 3%; 
+    margin-bottom: 20px;     
+}
+
+.img-responsive {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;   
+}
+
+
+.title-name h1 {    
+    
+    display: inline;
+    font-size: 36;  
+    color: #dddddd; 
+    font-weight: 200; 
+   font-family: 'Arvin';
+}
+
+.quote {
+    font-family: 'Kelvetica';
+    font-size: 24;  
+    color: #9999ff; 
+    margin-top: 80px;
+}
+
+/* 
+    Footer 
+*/
+
+.footer { 
+  display: block; 
+  font-family: 'Arvin';  
+  }
+
+.column, .columns { 
+    width: 100%; 
+    float: right; 
+    box-sizing: border-box; 
+}
+
+.site-footer { 
+  position:absolute;
+   bottom:0;
+   height:50px; 
+   width:100%;
+ /* background-color: rgba(0,26,77, .6);*/
+  background-color: rgba(255,26,26, .8);
+  text-align: center;
+}
+
+.site-footer .left a:hover { 
+    color: black;
+    border-bottom: 1px; 
+}
+
+.fa:hover{
+    color: #dddddd;
+    border-bottom: 1px;
+}
+
+.fa{
+     padding-left: 5px; 
+     color:black
+}
+
+.footer { 
+    float: left; 
+    color:  #dddddd;
+}
+
+.left { 
+    text-align: left; 
+    padding-top: 15px;
+}
+
+.right { 
+    text-align: right;
+    padding-top: 10px;
+}
+
+.footer.left.column {
+    width: 70%;
+    padding-left: 15px;
+}
+
+.footer.right.column {
+    width: 30%;
+    padding-right: 10px;
+}
+
+/*
+CV
+*/
+
+th {
+    text-align: left;
+}
+
+.personal-info {
+    float: left;
+    width: 350px;
+}
+
+.personal-image {
+    float: right;
+    width: 250px;    
+    text-align: center;
+}
+
+.personal-info h1 {
+    margin-top: 0px;
+}
+
+.img-cv {
+    height: 200px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.cv-section {
+    overflow: hidden;
+}
+
+.cv-section-h2 {
+    border-width: 0 0 1px 0;
+    border-bottom-color: black;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+.cv-section > .entry {
+    margin-bottom: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*
+    Books
+*/
+
+
+.right-image {
+    max-width: 300px;
+    margin: 10px;
+    float: right;
+}
+
+.left-image {
+    max-width: 300px;
+    margin: 10px;
+    float: left;
+}
+
+.book {
+     position: relative;
+     min-height: 450px;
+}
+
+.book > h2 {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.book > h3 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top:0px
+}
+
+.book > p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.book-list {
+    float: left; 
+    text-align: center; 
+    margin: 20px; 
+    width: 160px 
+}
+
+.reference-image {
+    height: 30px; 
+    float: right;
+    margin-left: 5px;
+}
+
+.book-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+/*
+Shows
+*/
+
+.shows img {
+    margin: 10px;
+    width: 100%
+}
+
+/*
+blog
+*/
+
+.blog-post h3 {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: normal;
+    color: gray;
+}
+
+.blog-post h2 a {
+    color: black;    
+}
+
+.blog-post h2 {
+    margin-top: 0px;
+}
+
+.blog-post {
+    margin-bottom: 40px;
+}
+
+.in-blog h3 {
+     margin-top: 02px;
+    margin-bottom: 20px;
+}
+
+.in-blog .date {
+    margin-bottom: 10px;
+}
+
+.in-blog p {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+/*
+Hobby
+*/
+
+
+
+.page-container img {
+    display: block;
+    margin: 0 auto;
+}
+
+.page-container h1 {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.page-container h2 {
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.page-container h3 {
+    margin: 0px;
+    text-align: right;
+}
+
+.page-container h4 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.page-container p {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.page-container li {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.page-container ul {
+    height: 100%;
+    margin: 0px;
+    width: 100%;
+}

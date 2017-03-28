@@ -1,0 +1,53 @@
+- type: Language skills
+  values:
+    - name: Anglický jazyk
+      description: "C1"
+    - name: Nemecký jazyk
+      description: "A1"
+
+- type: Computer skills
+  values:
+  - name: Microsoft Excel
+    description: "2"
+  - name: Microsoft Word
+    description: "3"
+  - name: Microsoft PowerPoint
+    description: "3"
+  - name: Microsoft Visio
+    description: "1"
+  - name: Microsoft Access
+    description: "1"  
+  - name: Latex
+    description: "1"    
+  - name: Microsoft Windows
+    description: "2"
+  - name: UNIX/Linux
+    description: "1"
+  - name: Enterprise Architect
+    description: "1"
+  - name: Git
+    description: "1"
+
+# "1" - basic, "2" - advanced, "3" - expert
+- type: Programming Languages
+  values: 
+  - name: C
+    description: "1"
+  - name: C++
+    description: "2"
+  - name: Java
+    description: "1"
+  - name: UML
+    description: "1"
+  - name: HTML
+    description: "1"
+  - name: CSS
+    description: "1"
+  - name: PostgreSQL
+    description: "1"
+  - name: OpenCV
+    description: "2"
+  - name: OpenGL
+    description: "1"
+  - name: ITK
+    description: "1"

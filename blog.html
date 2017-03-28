@@ -1,180 +1,21 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: Môj blog
+navbar-description: Blog
+navigation_weight: 5
+---
 
-<body>
-<div class="wrapper">
-
-	
-		<title>Môj blog</title>
-		<!-- link to main stylesheet -->
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-
-	
-
-	
-
-		<div class="header">
-			<ul class="navbar">
-    <div class="navbar-container">
-
-     <li class="nav-title">Môj blog</li>
-
-<!-- O stránke - pridané odkazom na zadanie -->
-     <li style="float:right">
-          <a href="/wpub/zadanie1.html">            
-            About site
-          </a>
-    </li>
-
- 
-    
-      
-        <li style="float:right" class="active">
-          <a href="/blog.html">            
-            Blog
-          </a>
-        </li>
-      
-
-      
-        <li style="float:right">
-          <a href="/cv.html">            
-            CV
-          </a>
-        </li>
-      
-
-      
-        <li style="float:right">
-          <a href="/about_me.html">            
-            About me
-          </a>
-        </li>
-      
-
-      
-        <li style="float:right">
-          <a href="/">            
-            Home
-          </a>
-        </li>
-      
-
-      
-
-      
-
- 
-    </div>
-</ul>
-		</div>
-
-		<div class="content  container ">
-			
-			
+{% for post in site.posts %}
   <div class="blog-post">
-    <h2><a href="/2017/03/25/zadanie2.html">Popis druhého zadania</a></h2>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
     <p class="summary" align="left">
-      </p>
-<h3>
-        <span class="subtitle">A iné zmeny</span>
-        <span class="date" style="float: right"> <i>dnes</i> </span>
+      <h3>
+        <span class="subtitle">{{ post.subtitle }}</span>
+        <span class="date" style="float: right"> <i>{{ post.date | date: '%d. %b. %Y' | timeago }}</i> </span>
       </h3>
-    
+    </p>
 <!--date: '%d. %b. %Y'-->
-    <p>Bol pridaný popis druhého zadania - práca v Docbooku. Môžete ho nájsť v <em>About me</em> -&gt; <em>Profesné záujmy</em> -&gt; <em>Webové publikovanie</em>.</p>
-
-
+    {{ post.excerpt }}
   </div>
-
-  <div class="blog-post">
-    <h2><a href="/2017/03/09/got.html">Winter is coming <img class="emoji" title=":snowflake:" alt=":snowflake:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2744.png" height="20" width="20" align="absmiddle"><img class="emoji" title=":snowflake:" alt=":snowflake:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2744.png" height="20" width="20" align="absmiddle"><img class="emoji" title=":snowflake:" alt=":snowflake:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2744.png" height="20" width="20" align="absmiddle"></a></h2>
-
-    <p class="summary" align="left">
-      </p>
-<h3>
-        <span class="subtitle"><img class="emoji" title=":calendar:" alt=":calendar:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4c6.png" height="20" width="20" align="absmiddle"> Dátum začiatku 7. série Game of Thrones ohlásený</span>
-        <span class="date" style="float: right"> <i>pred 2 týždňami a 2 dňami</i> </span>
-      </h3>
-    
-<!--date: '%d. %b. %Y'-->
-    <p>Dnes večer bol konečne ohlásený dátum 7. série Game of Thrones: 16. 7. 2017. Budeme si teda musieť na novú sériu ešte hodnú chvíľu počkať <img class="emoji" title=":worried:" alt=":worried:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61f.png" height="20" width="20" align="absmiddle">.</p>
-
-
-  </div>
-
-  <div class="blog-post">
-    <h2><a href="/2017/03/09/content.html">Už je to tu</a></h2>
-
-    <p class="summary" align="left">
-      </p>
-<h3>
-        <span class="subtitle">Novinky na stránke</span>
-        <span class="date" style="float: right"> <i>pred 2 týždňami a 2 dňami</i> </span>
-      </h3>
-    
-<!--date: '%d. %b. %Y'-->
-    <p>Na stránku bol pridaný nový obsah. Preto už, aspoň dúfam, nepôsobí prázdne.</p>
-
-
-  </div>
-
-  <div class="blog-post">
-    <h2><a href="/2017/03/07/emoji.html">Emojis <img class="emoji" title=":stuck_out_tongue_winking_eye:" alt=":stuck_out_tongue_winking_eye:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f61c.png" height="20" width="20" align="absmiddle"></a></h2>
-
-    <p class="summary" align="left">
-      </p>
-<h3>
-        <span class="subtitle">Pridané emotikony</span>
-        <span class="date" style="float: right"> <i>pred 2 týždňami a 4 dňami</i> </span>
-      </h3>
-    
-<!--date: '%d. %b. %Y'-->
-    <p>Na stránku som pridal nový plugin - jemoji. Umožňuje pridávať na stránku emotikony <img class="emoji" title=":smiley:" alt=":smiley:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f603.png" height="20" width="20" align="absmiddle"> <img class="emoji" title=":+1:" alt=":+1:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20" align="absmiddle">. Mal by fungovať aj na githube. Spolu s ostatnými pluginmi a ich použitiami je popísaný na stránke <a href="/wpub/zadanie1.html">O stránke</a>.</p>
-
-  </div>
-
-  <div class="blog-post">
-    <h2><a href="/2017/02/23/site-launched.html">Hello Hello</a></h2>
-
-    <p class="summary" align="left">
-      </p>
-<h3>
-        <span class="subtitle">Spustenie stránky</span>
-        <span class="date" style="float: right"> <i>pred 4 týždňami a 2 dňami</i> </span>
-      </h3>
-    
-<!--date: '%d. %b. %Y'-->
-    <p>Vrámci cvičenia z predmetu Webové publikovanie som vytvoril prvú verziu tejto stránky s cieľom nielen získať dobré hodnotenie za projekt, ale aj prezentovať svoje záujmy a znalosti ostatným.</p>
-
-
-  </div>
-
-		</div>
-
-		<footer class="site-footer">
-			
-	<div class="navbar-container">
-		
-		<div class="footer left column"> © 2017 Ondrej Selecký. Powered by <a href="https://jekyllrb.com/" alt="link to jekyll">jekyll</a>.</div>
-		<div class="footer right column">
-			<a class="fa fa-github" href="https://github.com/OndrykSelecky" style="font-size:28px;"></a>
-			<a class="fa fa-facebook-square" href="https://www.facebook.com/ondrej.selecky" style="font-size:28px;"> </a>
-			<a class="fa fa-envelope" href="mailto:ondryk.selecky@gmail.com" style="font-size:30px;"> </a>				
-		</div>
-	</div>
-
-
-
-		</footer>
-
-	
-
-
-</div>
-
-</body>
-</html>
+{% endfor %}
