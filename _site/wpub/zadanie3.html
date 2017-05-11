@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<div class="wrapper">
+
+	<head>
+		<title>Zadanie 3</title>
+		<!-- link to main stylesheet -->
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+	</head>
+
+	<body>
+
+		<div class="header">
+			<ul class="navbar">
+    <div class="navbar-container">
+
+     <li class="nav-title">Zadanie 3</li>
+
+<!-- O stránke - pridané odkazom na zadanie -->
+     <li style="float:right" >
+          <a href="/wpub/zadanie1.html" >            
+            About site
+          </a>
+    </li>
+
+ 
+    
+      
+        <li style="float:right" >
+          <a href="/blog.html" >            
+            Blog
+          </a>
+        </li>
+      
+
+      
+        <li style="float:right" >
+          <a href="/cv.html" >            
+            CV
+          </a>
+        </li>
+      
+
+      
+        <li style="float:right" >
+          <a href="/about_me.html" >            
+            About me
+          </a>
+        </li>
+      
+
+      
+        <li style="float:right" >
+          <a href="/" >            
+            Home
+          </a>
+        </li>
+      
+
+      
+
+      
+
+ 
+    </div>
+</ul>
+		</div>
+
+		<div class="content  container ">
+			
+			<div class="page-container">
+    <h2 id="zadanie-3">Zadanie 3</h2>
+
+<p>Predmetom 3. zadania je analyzovanie možností tvorby webových prezentácií a návrh vlastnej prezentácie vytvorením xml schémy, xslt transformácií do pdf a html a ukážkovej prezentácie.</p>
+
+<h2 id="splnenie-požadovaných-podmienok">Splnenie požadovaných podmienok</h2>
+
+<ul>
+  <li><strong>Opis typu dokumentu</strong>: pomocou xml schémy</li>
+  <li><strong>Vytvorenie ukážkovej prezentácie</strong>: Bola vytvorená prezentácia vo formáte html, ktorá demonštruje možnosti zadania.</li>
+  <li><strong>Návrh xsl transformácií</strong>: do html aj do pdf, je možné zadať vstupný parameter</li>
+  <li><strong>konverzia z xml do html</strong>: dohromady 5 slajdov, použité css, ukážková prezentácia</li>
+  <li><strong>konverzia z xml do pdf</strong>: len čiastočne, z časových dôvodov neobsahuje všetky potrebné transformácie, problém s kódovaním</li>
+</ul>
+
+<h2 id="popis-schémy">Popis schémy</h2>
+
+<p>Prezentácia, ktorá spĺňa požiadavky schémy, obsahuje tieto súčasti:</p>
+<ul>
+  <li>koreňový element &lt;presentation&gt;
+    <ul>
+      <li>element &lt;styles&gt; - obsahuje štýlovanie pre celú prezentáciu, vrátene farby pozadia, štýlu písma a nadpisov či štúlu nadpisov každého slajdu</li>
+      <li>&lt;frontPage&gt; = titulná strana. Obsahuje tieto hlavné elementy:
+        <ul>
+          <li>&lt;title&gt; = hlavný nadpis</li>
+          <li>&lt;subtitle&gt; = podnadpis</li>
+          <li>&lt;authors&gt; = mená autorov</li>
+          <li>&lt;date&gt; = dátum vytvorenia</li>
+        </ul>
+      </li>
+      <li>&lt;page&gt; = obyčajná strana
+        <ul>
+          <li>&lt;title&gt; = nadpis</li>
+          <li>layouty =
+            <ul>
+              <li>&lt;simplelayout&gt; = 1 stĺpec</li>
+              <li>&lt;doublelayout&gt; = 2 stĺpce
+                <ul>
+                  <li>&lt;leftColumn&gt;</li>
+                  <li>&lt;rightColumn&gt;</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Nadpisy, &lt;simplelayout&gt; a &lt;*Column&gt; môžu obsahovať niektoré z týchto elementov, presné možnosti závisia od druhu nadelementu:</p>
+<ul>
+  <li>&lt;paragraph&gt; = odstavec</li>
+  <li>&lt;table&gt; = tabuľka</li>
+  <li>&lt;image&gt; = obrázok</li>
+  <li>&lt;list&gt;, &lt;orderedList&gt; = zoznamy</li>
+</ul>
+
+<p>Štýlovanie elementov sa nastavuje v elemente &lt;style&gt;, ktorý obsahujú niektoré z vyššie popísaných elementov. Pre daný elemnt vždy platí štýlovanie najnižšie v hierarchii. Napríklad, je možné nastaviť pozadie všetkých slajdov v elemente &lt;styles&gt;, ale aj konkrétnym slajdom, pričom globálne nastavenia sa uchovajú len pri tých elementoch, ktoré nemajú lokálne.</p>
+
+<p>Je možné nastaviť štýly:</p>
+<ul>
+  <li>výška a šírka blokov</li>
+  <li>farba pozadia</li>
+  <li>zarovnanie</li>
+  <li>písmo - typ, farba, veľkosť</li>
+  <li>odsadenie od vrchu</li>
+</ul>
+
+<p>Okrem celkových štýlov sú definované aj inline elementy na lokálnu zmenu, napríklad tučné písmo či kurzíva. Tieto je možné aj kombinovať.</p>
+
+<p>Poradie elementov na titulnej stránke je možné meniť, ich výška a odsadenie textu sa nastavuje pre každý osobitne.</p>
+
+<h2 id="popis-transformácií">Popis transformácií</h2>
+
+<h3 id="html">Html</h3>
+<p>Vygenerovaná prezentácia pozostáva z titulného slajdu (súbor index.html) a ostatných, ktoré sú uložené v súboroch slide_*.html, kde * je poradové číslo. Okrem štandardného obsahu sa v nich nachádza navigačný panel na prepínanie medzi snímkami, generovaný slajd so zoznamom referencií a mená autorov v spodnej časti, ktorých viditeľnosť je možné nastaviť cez parameter transformácie showAuthors</p>
+
+<h3 id="pdf">Pdf</h3>
+<p>Pri transformácii do pdf chýbajú určité vlastnosti, ktoré má html výstup, pretože som ich nestihol dokončiť. Chýbaj číslovanie strán a zoznam odkazov na konci. Tktiež je problém s kódovaním niektorých znakov, ktoré nezobrazuje správne.</p>
+
+
+</div>
+		</div>
+
+		<footer class="site-footer">
+			
+	<div class="navbar-container">
+		
+		<div class="footer left column"> © 2017 Ondrej Selecký. Powered by <a href="https://jekyllrb.com/" alt="link to jekyll">jekyll</a>.</div>
+		<div class="footer right column">
+			<a class="fa fa-github" href="https://github.com/OndrykSelecky" style="font-size:28px;"></a>
+			<a class="fa fa-facebook-square" href="https://www.facebook.com/ondrej.selecky" style="font-size:28px;"> </a>
+			<a class="fa fa-envelope" href="mailto:ondryk.selecky@gmail.com" style="font-size:30px;"> </a>				
+		</div>
+	</div>
+
+
+
+		</footer>
+
+	</body>
+
+
+</div>
+
+</html>
