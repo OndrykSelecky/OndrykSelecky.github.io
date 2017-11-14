@@ -1,8 +1,14 @@
 - school: Faculty of informatics and information technology, Slovak university of technology 
   city: Bratislava
+  start_year: 2017
+  end_year: -
+  field: Inteligent Software Systems, Master study
+
+- school: Faculty of informatics and information technology, Slovak university of technology 
+  city: Bratislava
   start_year: 2014
   end_year: 2017
-  field: Informatics
+  field: Informatics, Bachelor study
 
 - school: Gymnázium Detva
   city: Detva
